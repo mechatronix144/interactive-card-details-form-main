@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+ <div id="container">
+  <div class="section1">
+    <div id="back-image">
+      <p id="back-value">000</p>
+    </div>
+    <div id="front-image">
+      
+      <img class="image1" src="./images/card-logo.svg">
+      <p id="card-value">0000 0000 0000 0000</p>
+     <div class="box4">
+      <p id="card-name">Jane Appleseed</p>
+      <div class="data3">
+        <p id="data"> 00</p>
+      <p id="data2">/00</p>
+      </div>
+     </div>
+    </div>
+     </div>
+     
+     <div class="section2">
+          <form id="form">
+          <div class="box1">
+            <label class="label1" for="firstname">  CARDHOLDER NAME</label>
+            <input id="firstname" type="text" placeholder=" e.g. Jane Appleseed" required maxlength="20">
+          </div>
+          <div class="box2">
+            <label class="label1" for="cardnumber">  CARD NUMBER</label>
+            <input id="cardnumber" type="text" placeholder="  e.g. 1234 5678 9123 0000" required maxlength="16">
+          </div>
+          <div class="main-button">
+            <div class="box3">
+              <p id="date"> Exp. Date (MM/YY)</p>
+              <input id="month" type="number" placeholder="MM" required maxlength="2">
+              <input id="year" type="year" placeholder="YY" required maxlength="4">
+            </div>
+            <div class="cvc-box">
+              <p id="cvc">CVC</p>
+              <input id="cvc-buttom" type="number" placeholder="e.g. 123" required maxlength="3">
+            </div>
+          </div>
+          <button id="confirm-button"> Confirm</button>
+          </form>
+ </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
